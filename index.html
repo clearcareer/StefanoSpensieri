@@ -1,84 +1,46 @@
 ---
 layout: default
-page_template_color: red
-navbar_brand: John
-full_name: John Smith
+page_template_color: '#ff0000'
+navbar_brand: Joao
+full_name: Coelho
 email: example@example.com
 profilepic_path: /assets/images/profilepic.jpg
 background_image_path: /assets/images/astronaut.jpg
-upload_resume_path: ''
+upload_resume_path:
 occupations:
   - title: "I'm an Astronaut"
   - title: "I'm an Albatraoz"
   - title: "I'm a Superhero"
 goals:
-  - name: Travel
-    icon: plane
-    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
-  - name: Create
-    icon: star
-    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
-  - name: Inspire
-    icon: group
-    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
-education: 
-    - number: 1
-      years: 2012-2014
-      degree: Bachelor of Arts
-      institution: University of Mars
-      description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    - number: 2
-      years: 2042-2022
-      degree: Master of Arts
-      institution: University of Neptune
-      description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-work_experience: 
-    - number: 1
-      years: 2012-2014
-      position: Senior Designer
-      company: Company A
-      description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    - number: 2
-      years: 2014-2016
-      position: Engineer
-      company: Company B
-      description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+education:
+work_experience:
 skills:
-    - name: Javascript
-      level: 20
-    - name: HTML/CSS
-      level: 47
-    - name: Digital Marketing
-      level: 65
-    - name: Graphic Design
-      level: 90
-
 achievements:
-    - name: Expertise Award
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
-      icon: trophy
-    - name: Travel Award
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
-      icon: plane
-    - name: Star Award
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
-      icon: star
-    - name: Instagram Photographer
-      description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
-      icon: instagram
+  - name: Expertise Award
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+    icon: trophy
+  - name: Travel Award
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+    icon: plane
+  - name: Star Award
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+    icon: star
+  - name: Instagram Photographer
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+    icon: instagram
 social_icons:
-    - name: Facebook
-      link: #
-      icon: facebook
-    - name: Twitter
-      link: #
-      icon: twitter
-    - name: Instagram
-      link: #
-      icon: instagram
-    - name: Github
-      link: #
-      icon: github
+  - name: Facebook
+    link:
+    icon: facebook
+  - name: Twitter
+    link:
+    icon: twitter
+  - name: Instagram
+    link:
+    icon: instagram
+  - name: Github
+    link:
+    icon: github
 ---
 
 
@@ -174,7 +136,7 @@ social_icons:
                     <!-- PROFILE PICTURE START -->
                     <div class="col-md-4 hidden-xs hidden-sm match-height pp-wrapper">
                         <div class="profile-picture style-two">
-                            <img src="{{ page.profilepic_path }}" alt="profile picture" class="img-responsive"/>
+                            <img src="{{ page.profilepic_path }}" alt="profile picture" class="img-responsive" />
                             
                             <h4 class="title editable">Graphic Designer</h4>
                         </div>
@@ -187,7 +149,7 @@ social_icons:
                         <div class="profile-text padding-left-yes">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h2 class="section-title editable">Hello, My Name is John.</h2>
+                                    <h2 class="section-title editable">Hello, My Name is Joao.</h2>
 
                                     <p class="editable">
                                         John Smith. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -280,8 +242,8 @@ social_icons:
                                 <p class="text-center">
                                     <i class="fa fa-{{ goal.icon }} fa-3x colored-text"></i>
                                 
-                                    <h4 class="text-center">{{ goal.name }}</h4>
-                                </p>
+                                    </p><h4 class="text-center">{{ goal.name }}</h4>
+                                <p></p>
                             
                                 <p>
                                     {{ goal.description }}
